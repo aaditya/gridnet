@@ -1,7 +1,7 @@
 {
   "settings": {
     "server": {
-      "protocol": "http",
+      "protocol": "https",
       "host": "gridnet.nvixion.tech"
     },
     "verification": {
