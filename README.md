@@ -58,4 +58,4 @@
 
 ## Application URL
 
-* To Be deployed
+* https://gridnet.nvixion.tech

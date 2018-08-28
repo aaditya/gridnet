@@ -13,7 +13,7 @@ global.cryptoKey = config.setup.development.cryptoKey;
 mongoose.Promise = global.Promise;
 
 // Environment Setup
-if (option[2] === 'development' || option[2] === null || option[2] == undefined) {
+if (option[2] === 'development') {
     process.env.NODE_ENV = 'development';
     cryptoKey = cryptoKey;
     port = process.env.PORT || config.setup.development.PORT;
@@ -35,7 +35,7 @@ if (option[2] === 'development' || option[2] === null || option[2] == undefined)
       "cbLink": config.setup.testing.cbLink,
       "salt": config.setup.testing.salt
     };
-} else if (option[2] === 'production') {
+} else if (option[2] === 'production' || option[2] === null || option[2] == undefined) {
     console.log("IN PRODUCTION");
     cryptoKey = config.setup.production.cryptoKey;
     db = config.setup.production.database;
